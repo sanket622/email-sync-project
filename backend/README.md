@@ -68,12 +68,15 @@ Fetch Emails & Store in MongoDB
 
 GET /api/emails
 Fetches all stored emails from the database.
+
 2. AI-Powered Email Categorization
 POST /api/categoriseEmail
 Categorizes and stores an email using OpenAI.
+
 3️. Search Emails (Elasticsearch)
 GET /api/search?query=keyword
 Searches stored emails based on a keyword.
+
 4️. AI-Powered Email Reply Suggestion
 POST /api/AiReply
 Suggests a reply to an email using AI.
