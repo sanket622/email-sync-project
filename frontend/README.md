@@ -19,26 +19,6 @@ Styling: Tailwind CSS
 HTTP Requests: Axios
 Routing: React Router DOM
 
-📂 Project Structure
-frontend/
-│── src/
-│   ├── api/
-│   │   ├── emailApi.js        # API calls to fetch and search emails
-│   ├── components/
-│   │   ├── EmailItem.jsx      # Renders an individual email
-│   │   ├── EmailList.jsx      # Displays a list of emails
-│   │   ├── SearchBar.jsx      # Input field for searching emails
-│   ├── pages/
-│   │   ├── Home.jsx           # Main home page with email listing
-│   ├── main.jsx               # React root component
-│   ├── App.jsx                # Application wrapper
-│── public/
-│── package.json
-│── vite.config.js
-│── tailwind.config.js
-│── postcss.config.js
-│── index.html
-
 🏗️ Installation & Setup
 1️⃣ Clone the Repository
 
