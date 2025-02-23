@@ -4,6 +4,7 @@ import cors from 'cors';
 import emailRoutes from './routes/emailRoutes.js';
 import searchRoutes from './routes/searchRoutes.js';
 import suggestRoutes from './routes/suggestRoutes.js';
+import categorizeRoutes from './routes/categorizeRoutes.js';
 import { connectAllIMAPAccounts } from './services/imapService.js';
 import { connectToElasticsearch } from './services/elasticService.js';
 import connectDB from './config/db.js';
@@ -23,6 +24,7 @@ app.use(cors());
 app.use('/api/emails', emailRoutes);
 app.use('/api/search', searchRoutes);
 app.use('/api/AiReply', suggestRoutes);
+app.use('/api/categoriseEmail', categorizeRoutes);
 
 const PORT = process.env.PORT || 8080;
 

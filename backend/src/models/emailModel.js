@@ -6,6 +6,7 @@ const emailSchema = new mongoose.Schema({
     subject: String,
     date: Date,
     body: String,
-  }, { timestamps: true });
+    category: { type: String, enum: ["Interested", "Meeting Booked", "Not Interested", "Spam", "Out of Office"] }, // AI-based categorization
+}, { timestamps: true });
 
 export default mongoose.model('Email', emailSchema);

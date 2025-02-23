@@ -13,6 +13,7 @@
   "license": "ISC",
   "dependencies": {
     "@elastic/elasticsearch": "^8.17.0",
+    "@pinecone-database/pinecone": "^5.0.2",
     "@slack/webhook": "^7.0.4",
     "axios": "^1.7.9",
     "cors": "^2.8.5",
