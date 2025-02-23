@@ -32,7 +32,9 @@ const PORT = process.env.PORT || 8080;
 app.get("/server", (req, res) => {
     res.send("Server is running successfully!");
 });
-
+app.get("/", (req, res) => {
+    res.send("Welcome to email-sync-api API");
+  });
 // Start the server
 app.listen(PORT, async () => {
     console.log(`🚀 Server running on port ${PORT}`);
