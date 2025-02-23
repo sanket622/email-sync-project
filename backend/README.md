@@ -64,8 +64,8 @@ npm start
 8. API Endpoints
    
 
-1. Email Synchronization (IMAP & MongoDB)
-Fetch Emails & Store in MongoDB
+ Email Synchronization (IMAP & MongoDB)
+ Fetch Emails & Store in MongoDB
 
 1. GET /api/emails
 Fetches all stored emails from the database.
