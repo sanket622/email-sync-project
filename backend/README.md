@@ -67,7 +67,7 @@ npm start
 1. Email Synchronization (IMAP & MongoDB)
 Fetch Emails & Store in MongoDB
 
-GET /api/emails
+1. GET /api/emails
 Fetches all stored emails from the database.
 
 2. AI-Powered Email Categorization
