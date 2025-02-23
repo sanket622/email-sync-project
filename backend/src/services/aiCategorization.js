@@ -36,18 +36,35 @@ export async function categorizeEmail(emailBody) {
 }
 
 export async function suggestReply(emailBody) {
-    try {
-        const response = await openai.chat.completions.create({
-            model: 'gpt-3.5-turbo', // Use this model if GPT-4 isn't available
-            messages: [
-                { role: 'system', content: "Generate a professional reply based on the given email." },
-                { role: 'user', content: `Email content:\n\n"${emailBody}"\n\nSuggested reply:` }
-            ],
-            max_tokens: 10,
-        });
+  try {
+    // Retrieve relevant context from Pinecone
+    const relevantData = await retrieveRelevantData(emailBody);
 
-        return response.choices[0]?.message?.content?.trim() || "No reply generated.";
-    } catch (error) {
-        console.error("Error suggesting reply:", error);
-        return "No reply generated.";
-    }}
+    // Create AI prompt with relevant data
+    const prompt = `
+      You are an AI assistant generating professional email replies.
+      Use the relevant context to craft a thoughtful response.
+
+      Relevant Context:
+      ${relevantData}
+
+      Email Received:
+      "${emailBody}"
+
+      Suggested Reply:
+    `;
+
+    // Call OpenAI API
+    const response = await openai.chat.completions.create({
+      model: "gpt-3.5-turbo",
+      messages: [{ role: "system", content: prompt }],
+      max_tokens: 100,
+    });
+
+    return response.choices[0]?.message?.content?.trim() || "No reply generated.";
+  } catch (error) {
+    console.error("❌ Error suggesting reply:", error);
+    return "No reply generated.";
+  }
+}
+
