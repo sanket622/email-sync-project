@@ -62,6 +62,7 @@ OPENAI_API_KEY=your-openai-key
 npm start
 
 8. API Endpoints
+   
 
 1. Email Synchronization (IMAP & MongoDB)
 Fetch Emails & Store in MongoDB
@@ -80,6 +81,7 @@ Searches stored emails based on a keyword.
 4️. AI-Powered Email Reply Suggestion
 POST /api/AiReply
 Suggests a reply to an email using AI.
+
 
 9. Key Functionalities
 
