@@ -63,18 +63,18 @@ npm start
 
 8. API Endpoints
 
-1️⃣ Email Synchronization (IMAP & MongoDB)
+1. Email Synchronization (IMAP & MongoDB)
 Fetch Emails & Store in MongoDB
 
 GET /api/emails
 Fetches all stored emails from the database.
-2️⃣ AI-Powered Email Categorization
+2. AI-Powered Email Categorization
 POST /api/categoriseEmail
 Categorizes and stores an email using OpenAI.
-3️⃣ Search Emails (Elasticsearch)
+3️. Search Emails (Elasticsearch)
 GET /api/search?query=keyword
 Searches stored emails based on a keyword.
-4️⃣ AI-Powered Email Reply Suggestion
+4️. AI-Powered Email Reply Suggestion
 POST /api/AiReply
 Suggests a reply to an email using AI.
 
