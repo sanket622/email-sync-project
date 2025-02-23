@@ -61,10 +61,12 @@ OPENAI_API_KEY=your-openai-key
 
 npm start
 
-8. API Endpoints( Email Synchronization (IMAP & MongoDB)
- Fetch Emails & Store in MongoDB)
+8. API Endpoints
    
+=>  Email Synchronization (IMAP & MongoDB)
+ Fetch Emails & Store in MongoDB)
 
+ 
 1. GET /api/emails
 Fetches all stored emails from the database.
 
