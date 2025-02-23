@@ -13,7 +13,7 @@ Search functionality using Elasticsearch
 AI-generated email replies via OpenAI
 Vector-based data retrieval using Pinecone
 
-3. Features
+ 3. Features
 
 Fetch Emails: Connects to multiple IMAP accounts, retrieves unread emails, and stores them in MongoDB.
 Categorize Emails: Uses OpenAI to classify emails into predefined categories.
@@ -21,7 +21,7 @@ Store and Index Emails: Saves emails in MongoDB and indexes them in Elasticsearc
 Search Emails: Queries Elasticsearch for relevant emails based on user input.
 Suggest AI-Powered Replies: Uses OpenAI and Pinecone to generate responses to emails.
 
-4. Technologies Used
+ 4. Technologies Used
 
 Node.js - Backend runtime
 Express.js - API framework
@@ -74,11 +74,11 @@ Fetches all stored emails from the database.
 POST /api/categoriseEmail
 Categorizes and stores an email using OpenAI.
 
-3️. Search Emails (Elasticsearch)
+ 3️. Search Emails (Elasticsearch)
 GET /api/search?query=keyword
 Searches stored emails based on a keyword.
 
-4️. AI-Powered Email Reply Suggestion
+ 4️. AI-Powered Email Reply Suggestion
 POST /api/AiReply
 Suggests a reply to an email using AI.
 
