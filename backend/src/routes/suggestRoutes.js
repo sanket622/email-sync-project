@@ -1,5 +1,5 @@
 import express from 'express';
-import { suggestReplies} from '../controllers/replyContainer.js';
+import { suggestReplies} from '../controllers/replyController.js';
 
 const router = express.Router();
 router.post('/', suggestReplies);
